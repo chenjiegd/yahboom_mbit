@@ -552,6 +552,7 @@ namespace mbit_小车类 {
         Car_SpinRight = 7
     }
 
+    //I2C通信
     function i2cwrite(addr: number, reg: number, value: number) {
         let buf = pins.createBuffer(2)
         buf[0] = reg
