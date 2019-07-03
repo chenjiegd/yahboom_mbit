@@ -666,10 +666,11 @@ namespace mbit_小车类 {
         if (speed2 >= 4096) {
             speed2 = 4095
         }
-        
+        //左轮
         setPwm(12, 0, speed1);
         setPwm(13, 0, 0);
 
+        //右轮
         setPwm(15, 0, 0);
         setPwm(14, 0, speed2);
 
