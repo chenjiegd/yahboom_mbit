@@ -1027,8 +1027,8 @@ namespace mbit_小车类 {
         switch (index) {
             case CarState.Car_Run: Car_back(255, 255); break;
             case CarState.Car_Back: Car_run(255, 255); break;
-            case CarState.Car_Left: Car_right(0, 255); break;
-            case CarState.Car_Right: Car_left(255, 0); break;
+            case CarState.Car_Left: Car_right(255, 0); break;
+            case CarState.Car_Right: Car_left(0, 255); break;
             case CarState.Car_Stop: Car_stop(); break;
             case CarState.Car_SpinLeft: Car_spinright(255, 255); break;
             case CarState.Car_SpinRight: Car_spinleft(255, 255); break;
