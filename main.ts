@@ -670,8 +670,8 @@ namespace mbit_小车类 {
         setPwm(12, 0, speed1);
         setPwm(13, 0, 0);
 
-        setPwm(15, 0, speed2);
-        setPwm(14, 0, 0);
+        setPwm(15, 0, 0);
+        setPwm(14, 0, speed2);
 
         //pins.analogWritePin(AnalogPin.P0, speed);
         //pins.digitalWritePin(DigitalPin.P8, 0);
@@ -691,8 +691,8 @@ namespace mbit_小车类 {
             speed2 = 4095
         }
         
-        setPwm(12, 0, speed1);
-        setPwm(13, 0, 0);
+        setPwm(12, 0, 0);
+        setPwm(13, 0, speed1);
 
         setPwm(15, 0, speed2);
         setPwm(14, 0, 0);
@@ -1027,8 +1027,8 @@ namespace mbit_小车类 {
         switch (index) {
             case CarState.Car_Run: Car_back(255, 255); break;
             case CarState.Car_Back: Car_run(255, 255); break;
-            case CarState.Car_Left: Car_right(255, 0); break;
-            case CarState.Car_Right: Car_left(0, 255); break;
+            case CarState.Car_Left: Car_left(0, 255); break;
+            case CarState.Car_Right: Car_right(255, 0); break;
             case CarState.Car_Stop: Car_stop(); break;
             case CarState.Car_SpinLeft: Car_spinright(255, 255); break;
             case CarState.Car_SpinRight: Car_spinleft(255, 255); break;
